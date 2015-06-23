@@ -57,7 +57,6 @@ module SolarEdge
       uri = @host.merge(path)
       uri.query = self.class.hash_to_query(params)
 
-      puts uri
       get = Net::HTTP::Get.new(uri)
       response = @http.request(get)
       response.body
