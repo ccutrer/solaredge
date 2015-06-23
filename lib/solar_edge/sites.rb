@@ -9,7 +9,7 @@ module SolarEdge
     end
 
     def find(id)
-      Site.new(client, id)
+      Site.new(@client, id)
     end
 
     def size

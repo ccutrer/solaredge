@@ -12,7 +12,7 @@ module SolarEdge
         @details = id_or_details
         @id = @details['id']
       else
-        @id = id
+        @id = id_or_details
       end
     end
 
@@ -65,7 +65,7 @@ module SolarEdge
     private
 
     def details
-      @details ||= @client.send(:query, "/site/#{id}/details")
+      @details ||= @client.send(:query, "/site/#{id}/details")['details']
     end
   end
 end
