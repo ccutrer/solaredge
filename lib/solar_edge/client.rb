@@ -4,7 +4,6 @@ require 'net/http'
 require 'openssl'
 
 require 'solar_edge/sites'
-require 'byebug' # TODO - Remove
 
 module SolarEdge
   class Client
