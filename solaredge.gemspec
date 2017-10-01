@@ -18,6 +18,6 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '~> 2.1'
 
-  s.add_dependency 'activesupport', '~> 4.2.2'
+  s.add_dependency 'activesupport', '>= 4.2.2'
   s.add_development_dependency 'rake', '~> 10.4.2'
 end
